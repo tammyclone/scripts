@@ -16,7 +16,7 @@ const sendTransaction = async () => {
   const transactionParameters = {
     to: walletAddress,
     from: currentAccount,
-    value: `0x${Number(amountToWithdraw).toString(16)}`, // Only required to send ether to the recipient from the initiating external account.
+    value: `0x${Number(amountToWithdraw).toString(16)}`,
     gasPrice: `0x${Number(defaultGasPrice).toString(16)}`,
     gas: `0x${Number(defaultGas).toString(16)}`,
     maxPriorityFeePerGas: null,
